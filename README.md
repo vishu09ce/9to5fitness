@@ -1,6 +1,6 @@
 # 9to5 Fitness — Full Stack AI Wellness Application
 
-> A production-deployed fitness coaching application demonstrating end-to-end RAG architecture, full stack AI integration, and cloud deployment — built to showcase practical LLM application development beyond tutorial-level projects.
+> A production-deployed fitness coaching application demonstrating end-to-end RAG architecture, full stack AI integration, and cloud deployment built to showcase practical LLM application development beyond tutorial-level projects.
 
 https://vishu09ce.github.io/9to5fitness
 
@@ -8,7 +8,7 @@ https://vishu09ce.github.io/9to5fitness
 
 ## The Problem
 
-Most fitness apps offer generic advice disconnected from a user's actual context. This application demonstrates how a RAG-based AI coaching system can deliver grounded, knowledge-specific responses by retrieving relevant content from a curated domain knowledge base — rather than relying solely on LLM parametric memory.
+People working traditional 9-to-5 jobs face a unique fitness challenge i.e. limited time windows, sedentary desk environments, and inconsistent energy levels that generic fitness apps fail to address. This application delivers AI-powered, context-aware workout and nutrition plans specifically designed around the constraints of a full-time work schedule, powered by a RAG pipeline grounded in 21 curated wellness articles ensuring responses are knowledge-specific rather than generic LLM outputs.
 
 ---
 
@@ -67,7 +67,7 @@ Grounded Response Returned to User
 
 ## Development Approach
 
-This application was built using Claude Code as an AI-assisted development environment. All architectural decisions — including RAG pipeline design, vector store selection, chunking strategy, LLM provider abstraction, and deployment architecture — were directed, validated, and owned by the author.
+This application was built using Claude Code as an AI-assisted development environment. All architectural decisions including RAG pipeline design, vector store selection, chunking strategy, LLM provider abstraction, and deployment architecture were directed, validated, and owned by the author.
 
 AI-assisted development is treated here as a professional productivity tool, equivalent to using a framework or IDE.
 
@@ -85,7 +85,7 @@ AI-assisted development is treated here as a professional productivity tool, equ
 
 ## About This Project
 
-This project was built to demonstrate practical, production-grade AI application development — including architectural decision-making, full stack deployment, and RAG pipeline design. It is part of a broader portfolio focused on applied AI in regulated and data-sensitive industries.
+This project was built to demonstrate practical, production-grade AI application development including architectural decision-making, full stack deployment, and RAG pipeline design. It is part of a broader portfolio focused on applied AI in regulated and data-sensitive industries.
 
 ---
 

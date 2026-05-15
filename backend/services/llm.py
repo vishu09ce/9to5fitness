@@ -1,12 +1,13 @@
 from litellm import acompletion
 from models.schemas import ChatMessage
 from data.system_prompt import SYSTEM_PROMPT
+from data.knowledge_base import KNOWLEDGE_BASE
 from services.vector_store import retrieve
 
 
 async def get_chat_response(messages: list[ChatMessage]) -> str:
     query = messages[-1].content
-    context = retrieve(query)
+    context = retrieve(query) or KNOWLEDGE_BASE  # fallback to full KB while vector store warms up
     system_content = f"{SYSTEM_PROMPT}\n\n## RELEVANT KNOWLEDGE\n{context}"
     formatted = [{"role": "system", "content": system_content}] + [
         {"role": m.role, "content": m.content} for m in messages

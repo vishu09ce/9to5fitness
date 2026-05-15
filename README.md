@@ -65,9 +65,11 @@ Grounded Response Returned to User
 
 ---
 
-## Live Demo
+## Development Approach
 
-🔗 [Launch Application](https://vishu09ce.github.io/9to5fitness)
+This application was built using Claude Code as an AI-assisted development environment. All architectural decisions — including RAG pipeline design, vector store selection, chunking strategy, LLM provider abstraction, and deployment architecture — were directed, validated, and owned by the author.
+
+AI-assisted development is treated here as a professional productivity tool, equivalent to using a framework or IDE.
 
 ---
 

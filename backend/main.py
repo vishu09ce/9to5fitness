@@ -1,12 +1,21 @@
 import os
+from contextlib import asynccontextmanager
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from dotenv import load_dotenv
 from routers.chat import router as chat_router
+from services.vector_store import init_vector_store
 
 load_dotenv()
 
-app = FastAPI(title="9to5Fitness API")
+
+@asynccontextmanager
+async def lifespan(app: FastAPI):
+    init_vector_store()
+    yield
+
+
+app = FastAPI(title="9to5Fitness API", lifespan=lifespan)
 
 allowed_origins = [
     "http://localhost:5173",

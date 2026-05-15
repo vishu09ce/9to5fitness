@@ -2,6 +2,8 @@
 
 A digital magazine-style website for full-time office workers covering six wellness pillars, with an AI Coach powered by LiteLLM + Groq.
 
+https://vishu09ce.github.io/9to5fitness
+
 ## Stack
 - **Frontend:** React 18 + Vite + TypeScript + Tailwind CSS → GitHub Pages
 - **Backend:** FastAPI + LiteLLM + Groq → Render
